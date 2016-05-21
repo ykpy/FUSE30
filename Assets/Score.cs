@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
     public int score = 0;
+    public AudioSource bpm;
+    public AudioClip sound;
     
     void Start () {
        
@@ -17,6 +19,7 @@ public class Score : MonoBehaviour {
     public void addscore()
     {
         score += 10;
+        bpm.PlayOneShot(sound);
     }
       
 }
