@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.tag == "Item") {
 			score.addscore();
+			Destroy(col.gameObject);
 		}
 	}
 }

@@ -22,7 +22,7 @@ public class Score : MonoBehaviour {
     public void addscore()
     {
         score += 10;
-        bpm.PlayOneShot(sound);
+		bpm.PlayOneShot(sound);
     }
       
 }
