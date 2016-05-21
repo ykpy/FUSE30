@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
-    public int score = 0;
+    public int score = 7;
     public AudioSource bpm;
     public AudioClip sound;
     
