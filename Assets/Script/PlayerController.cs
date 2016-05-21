@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 		if (col.tag == "Item") {
 			score.addscore();
 			Destroy(col.gameObject);
+			Debug.Log("Hit");
 		}
 	}
 }
