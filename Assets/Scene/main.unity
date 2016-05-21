@@ -373,14 +373,13 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.6625141, y: 2.149975, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 701158203}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -151, y: -107}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.024183407, y: 0}
+  m_AnchorMax: {x: 0.63500005, y: 0.2725045}
+  m_AnchoredPosition: {x: 0.5, y: -3}
+  m_SizeDelta: {x: -97, y: -34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649477523
 MonoBehaviour:
@@ -896,10 +895,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2be31c8d2519f4293172d9eceffe2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  score: 40
   bpm: {fileID: 1401928264}
   sound: {fileID: 8300000, guid: 4eef70582da2b8f46b5d9f71fcf1d273, type: 3}
-  scoreUI: {fileID: 649477523}
 --- !u!82 &1401928264
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1091,10 +1089,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 701158203}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.024183407, y: 0.69237214}
-  m_AnchorMax: {x: 0.35881662, y: 0.96000004}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -1, y: -1}
+  m_AnchorMin: {x: 0.024183407, y: 0.69243306}
+  m_AnchorMax: {x: 0.88178766, y: 0.96000004}
+  m_AnchoredPosition: {x: 0.25, y: -0.5}
+  m_SizeDelta: {x: -0.5, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833103866
 MonoBehaviour:
@@ -1107,7 +1105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12b1b0ffa1811f4892255287373aa70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstTime: 60
+  firstTime: 2
   nextScene: Result
 --- !u!114 &1833103868
 MonoBehaviour:

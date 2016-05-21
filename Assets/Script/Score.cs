@@ -3,11 +3,22 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
-    public int score = 7;
+    public int score = 0;
     public AudioSource bpm;
     public AudioClip sound;
-    public Text scoreUI;
+    private static Score mInstance;
     
+    public static Score instance {
+        get
+        {
+            if(mInstance==null)
+            {
+                mInstance = FindObjectOfType<Score>();
+            }
+            return mInstance;
+        }
+    }
+
     void Start () {
        
     }
@@ -15,16 +26,12 @@ public class Score : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
-        {
-            addscore();
-        }
+        
     }
     public void addscore()
     {
         score += 10;
-		bpm.PlayOneShot(sound);
-        scoreUI.text = "score:" + score;
+        bpm.PlayOneShot(sound);
     }
       
 }

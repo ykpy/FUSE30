@@ -4,15 +4,16 @@ using UnityEngine.UI;
 public class ScoreUI : MonoBehaviour {
 
     private Text mtext;
-    private Score scoreP;
 	// Use this for initialization
 	void Start () {
-        scoreP = GetComponent<Score>();
+        
+        mtext = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        string ScoreT = scoreP.score.ToString("000");
+        int scoreP = Score.instance.score;
+        string ScoreT = scoreP.ToString("000");
         mtext.text = "Score:" + ScoreT;
 	}
 }
