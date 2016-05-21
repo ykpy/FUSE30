@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Pendulum : MonoBehaviour {
-
-    public float FirstSpeed;
+public class TimeUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Vector3 Rotation;
+	
 	}
 	
 	// Update is called once per frame
