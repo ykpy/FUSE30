@@ -8,6 +8,10 @@ public class Score : MonoBehaviour {
     public AudioClip sound;
     public Text scoreUI;
     
+	void Awake() {
+		DontDestroyOnLoad(gameObject);
+	}
+
     void Start () {
        
     }
