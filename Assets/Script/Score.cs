@@ -6,6 +6,7 @@ public class Score : MonoBehaviour {
     public int score = 0;
     public AudioSource bpm;
     public AudioClip sound;
+    public Text scoreUI;
     
     void Start () {
        
@@ -23,6 +24,7 @@ public class Score : MonoBehaviour {
     {
         score += 10;
 		bpm.PlayOneShot(sound);
+        scoreUI.text = "score:" + score;
     }
       
 }
