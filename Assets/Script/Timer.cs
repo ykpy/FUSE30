@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
 
     public float firstTime=5.0f;
+    public string nextScene;
     private Text mText;
 
     private 
@@ -23,7 +24,7 @@ public class Timer : MonoBehaviour {
 
         if(firstTime<0)
         {
-            Debug.Break();
+            Application.LoadLevel(nextScene);
         }
 	}
 }

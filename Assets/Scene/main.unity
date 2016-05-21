@@ -871,6 +871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstTime: 60
+  nextScene: Result
 --- !u!114 &1833103868
 MonoBehaviour:
   m_ObjectHideFlags: 0
