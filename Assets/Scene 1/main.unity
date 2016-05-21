@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12b1b0ffa1811f4892255287373aa70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstTime: 30
+  firstTime: 2
   nextScene: Result
 --- !u!114 &1833103868
 MonoBehaviour:

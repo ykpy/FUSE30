@@ -15,6 +15,7 @@ public class Score : MonoBehaviour {
 	}
 
     void Start () {
+        bpm = GetComponent<AudioSource>();
         instance = this;
     }
 
@@ -28,7 +29,9 @@ public class Score : MonoBehaviour {
     }
     public void addscore()
     {
+        bpm.Stop();
         score += 10;
+        
 		bpm.PlayOneShot(sound);
         scoreUI.text = "score:" + score;
     }
